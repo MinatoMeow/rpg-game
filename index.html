@@ -6,45 +6,61 @@
     <title>RPG - Dragon Repeller</title>
   </head>
   <body>
-    <div id="game">
-      <div id="stats">
-        <span class="stat">
-          XP:
-          <strong><span id="xp-text">0</span></strong>
-        </span>
+    <div class="container">
+      <div id="game">
+        <div id="stats">
+          <span class="stat">
+            XP:
+            <strong><span id="xp-text">0</span></strong>
+          </span>
 
-        <span class="stat">
-          Health:
-          <strong><span id="health-text">100</span></strong>
-        </span>
+          <span class="stat">
+            Health:
+            <strong><span id="health-text">100</span></strong>
+          </span>
 
-        <span class="stat">
-          Gold:
-          <strong><span id="gold-text">50</span></strong>
-        </span>
+          <span class="stat">
+            Gold:
+            <strong><span id="gold-text">50</span></strong>
+          </span>
+        </div>
+
+        <div id="controls">
+          <button id="button1">Go to store</button>
+          <button id="button2">Go to cave</button>
+          <button id="button3">Fight dragon</button>
+        </div>
+        <div id="monster-stats">
+          <span class="stat">
+            Monster Name:
+            <strong><span id="monster-name"></span></strong>
+          </span>
+
+          <span class="stat">
+            Health:
+            <strong><span id="monster-health"></span></strong>
+          </span>
+        </div>
+        <div id="text">
+          Welcome to Dragon Repeller. You must defeat the dragon that is
+          preventing people from leaving the town. You are in the town square.
+          Where do you want to go? Use the buttons above.
+        </div>
       </div>
 
-      <div id="controls">
-        <button id="button1">Go to store</button>
-        <button id="button2">Go to cave</button>
-        <button id="button3">Fight dragon</button>
-      </div>
-      <div id="monster-stats">
-        <span class="stat">
-          Monster Name:
-          <strong><span id="monster-name"></span></strong>
-        </span>
-
-        <span class="stat">
-          Health:
-          <strong><span id="monster-health"></span></strong>
-        </span>
-      </div>
-      <div id="text">
-        Welcome to Dragon Repeller. You must defeat the dragon that is
-        preventing people from leaving the town. You are in the town square.
-        Where do you want to go? Use the buttons above.
-      </div>
+      <footer class="row accent" id="footer">
+        <div class="col-1"></div>
+        <div id="name" class="col-1">
+          <a href="https://minatomeow.github.io/">
+            Created by Jaimie Clampitt</a
+          >
+        </div>
+        <div class="col-1" id="github-logo-container">
+          <a href="https://github.com/MinatoMeow/rpg-game"
+            ><img src="assets/GitHub_Invertocat_Light.png" id="github-logo"
+          /></a>
+        </div>
+      </footer>
     </div>
     <script src="./script.js"></script>
   </body>
